@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+
+:root{
+    --strong-cyan: hsl(171, 66%, 44%);
+    --light-blue: hsl(233, 100%, 69%);
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/bg-header-desktop.png");
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+.computer{
+    min-width: 300px;
+}
+
+.devices{
+    min-width: 300px;
+}
+
+.heading{
+    font-size: 2em;
+    padding: 1em;
+    font-family: 'Bai Jamjuree';
+}
+
+p{
+    font-family: 'Bai Jamjuree';
+    padding: 1em;
+}
+
+.two_buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_with_buttons{
+    text-align: center;
+    padding: 1em;
+    margin: 1em;
+}
+
+.header_with_buttons p{
+    padding: 2em;
+}
+
+.section_1{
+    text-align: center;
+    padding: 1em;
+    margin: 1em;
+}
+
+.section_2{
+    display: flex;
+    padding: 1em;
+    margin: 1em;
+}
+
+.section_3{
+    text-align: center;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+
+.section_4{
+    text-align: center;
+    padding: 1em;
+    margin: 1em;
+}
+
+.section_5{
+    text-align: center;
+    padding: 1em;
+    font-family: 'Bai Jamjuree';
+    margin: 1em;
+}
+
+.section_6{
+    text-align: center;
+    padding: 2em;
+    margin: 2em;
+}
+
+.section_6 p{
+    padding: 2em;
+}
+
+.section_7{
+    text-align: center;
+    padding: 1em;
+    background-color: var(--grayish-blue);
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    justify-items: center;
+    align-items: center;
+}
+
+.section_7 span{
+    font-family: 'Bai Jamjuree';
+}
+
+button{
+    cursor: pointer;
+}
+
+.ios{
+    background-color: var(--strong-cyan);
+    border: none;
+    padding: 1em;
+    border-radius: 15px;
+    font-family: 'Bai Jamjuree';
+    color: white;
+    width: 200px;
+}
+
+.mac{
+    background-color: var(--light-blue);
+    border: none;
+    padding: 1em;
+    border-radius: 15px;
+    font-family: 'Bai Jamjuree';
+    color: white;
+    width: 200px;
+}
+
+.section_2 p:nth-child(odd){
+    font-weight: 600;
+}
+
+.big_container{
+    display: flex;
+    justify-content: center;
+}
+
+.small_container{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+dt{
+    font-weight: 600;
+    padding: 1em;
+}
+
+dd{
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+.logos{
+    display: flex;
+    gap: 3em;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.logo{
+    max-width: 80px;
+}
+
+.footer_logo_up{
+    width: 150px;
+    height: 150px;
+    padding: 1em;
+    display: flex;
+    margin: 0 auto;
+}
+
+.footer_logo_down{
+    width: 30px;
+    height: 30px;
+}
+
+p{
+    opacity: 0.7;
+}
+
+span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (max-width: 650px){
+
+    .section_2{
+        flex-direction: column;
+    }
+
+
+    .section_2_text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 1em;
+    }
+
+   .section_3{
+        flex-direction: column;
+   }
+
+   .logo{
+        max-width: 50px;
+    }
+
+    .section_7{
+        grid-template-columns: 1fr;
+        grid-gap: 1em;
+    }
+
+    .ios{
+        width: 80%;
+    }
+
+    .mac{
+        width: 80%;
+    }
+
+    .two_buttons{
+        flex-direction: column;
+    }
+
+    .header_with_buttons p{
+        padding: 2em;
+    }
+
+    .big_container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logos{
+        flex-direction: column;
+    }
+
+    .logo{
+        max-width: 160px;
+    }
+}
